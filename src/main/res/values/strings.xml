@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Elliott sqlite example</string>
+    <!-- ############################################################### -->
+    <string name="DATABASE_NAME">MySqliteDB</string>
+    <integer name="DATABASE_VERSION">1</integer>
+    <string-array name="CREATE_DATABASE">
+        <item>\n
+            create table if not exists Comment(\n
+                id integer primary key AUTOINCREMENT,\n
+                CommentText text\n
+            )\n
+        </item>
+    </string-array>
+    <!-- ############################################################### -->
+    <string name="Comment">Comment</string>
+    <string name="id">id</string>
+    <string name="CommentText">CommentText</string>
+    <!-- ############################################################### -->
+    <string name="findAllComment">select CommentText from Comment</string>
+    <string name="searchComment" formatted="false">select CommentText from Comment where CommentText like \'%??@p1??%\'</string>
+</resources>
